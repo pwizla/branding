@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  // font-family: "Droid Serif", serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+p {
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 580px;
+}
+
+.title-wrapper {
+  margin: 0 auto;
+  height: 200px;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.content-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  // margin: 0 auto;
+}
+
+.grid-wrapper {
+  position: relative;
+  height: 100%;
+  width: 900px;
+  margin: auto;
+  background: #fff;
+}
+
+.grid--talent {
+  background: red;
+  width: 330px;
+  height: 200px;
+  margin: 55px;
+  float: left;
+
+  &-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px 0 0 20px;
+  }
+}

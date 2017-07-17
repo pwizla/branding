@@ -1,0 +1,55 @@
+/*@import url("https://fonts.googleapis.com/css?family=Raleway:300,500");
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,500|Droid+Serif:400,400i|Roboto:400,400i|Esteban");
+/*@import "variables";
+*/
+body {
+  margin: 0;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  box-sizing: border-box; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #333; }
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 580px; }
+
+.title-wrapper {
+  margin: 0 auto;
+  height: 200px; }
+
+.title {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translate(0, -50%); }
+
+.content-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.grid-wrapper {
+  position: relative;
+  height: 100%;
+  width: 900px;
+  margin: auto;
+  background: #fff; }
+
+.grid--talent {
+  background: red;
+  width: 330px;
+  height: 200px;
+  margin: 55px;
+  float: left; }
+  .grid--talent-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px 0 0 20px; }

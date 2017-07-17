@@ -1,0 +1,25 @@
+{
+  "name": "wiz.la_branding",
+  "version": "1.0.0",
+  "description": "Personal branding page for Pierre Wizla (July 2017)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pierre Wizla",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^3.3.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^2.0.0"
+  }
+}
