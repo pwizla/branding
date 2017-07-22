@@ -1,0 +1,121 @@
+.title {
+  position: relative;
+  top: 50%;
+  line-height: 36px;
+  transform: translate(0, -50%);
+
+  .title__hello {
+    opacity: 0;
+    @include fadeIn(0.5s, 2s);
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__name {
+    opacity: 0;
+    @include fadeIn(0.5s, 3s);
+  }
+
+  &--highlight {
+    color: #fff;
+    font-style: normal;
+  }
+
+  &--highlight-up {
+    color: $brand-red;
+  }
+
+  &__jobs {
+    opacity: 0;
+    @include fadeIn(0.5s, 4s);
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__rotating-words {
+    display: inline;
+    text-indent: 8px;
+  }
+
+  &__rotating-words span {
+    position: absolute;
+    color: #fff;
+    font-style: normal;
+    opacity: 0;
+    overflow: hidden;
+    animation: rotateWords 12s linear infinite 0s;
+  }
+
+  &__rotating-words span:nth-child(2) {
+    animation-delay: 3s;
+  }
+
+  &__rotating-words span:nth-child(3) {
+    animation-delay: 6s;
+  }
+
+  &__rotating-words span:nth-child(4) {
+    animation-delay: 9s;
+  }
+
+  @media(min-width: $mobile) {
+    line-height: 48px;
+  }
+
+  &__know-more {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    top: 85px;
+    margin-left: -30px;
+    padding: 10px 0 10px 30px;
+
+    font-family: "Work Sans", serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+    background: $brand-redshade;
+
+    @media(min-width: $mobile) {
+      font-size: 20px;
+      top: 40px;
+      // top: -10px;
+      margin-left: -90px;
+      padding: 20px 0 20px 90px;
+    }
+
+    opacity: 0;
+    @include fadeIn(1s, 14.5s);
+
+    --hidden {
+      color: $brand-red;
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    background: $brand-red;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 30px;
+
+    animation: 2s grow 0s forwards linear;
+
+    @media(min-width: $mobile) {
+      padding-left: 90px;
+      max-width: 560px;
+      position: relative;
+      top: 30%;
+    }
+
+    &--up {
+      animation: 0.5s expandVanish 0s forwards linear;
+    }
+
+  }
+}

@@ -1,0 +1,154 @@
+.details__anchor {
+  &-scientist,
+  &-dev,
+  &-design,
+  &-write {
+    position: absolute;
+    color: $brand-redshade;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    opacity: 0;
+    @include fadeIn(0.5s, 0.5s);
+
+    // @media(min-width: $mobile) {
+    //   font-size: 20px;
+    // }
+
+    &--hidden {
+      display: none;
+    }
+
+    &:hover {
+      color: $brand-red;
+      font-size: 24px;
+      transition: 0.3s ease;
+    }
+
+    &:hover::before {
+      // content: "See what I've done as a ";
+    }
+  }
+
+
+  &-scientist,
+  &-write {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &-scientist {
+    top: 0;
+  }
+
+  &-write {
+    bottom: 0;
+  }
+
+  &-dev,
+  &-design {
+    top: calc(50% - 50px);
+    height: 100px;
+
+    &:hover {
+      transform: rotate(0);
+      top: calc(50% - 15px);
+    }
+  }
+
+  &-dev {
+    left: -10px;
+    transform: rotate(-90deg);
+
+    &:hover {
+      left: 0;
+    }
+  }
+
+  &-design {
+    right: 0;
+    transform: rotate(90deg);
+
+    &:hover {
+      top: calc(50% - 15px);
+      // transform: translateY(-100px);
+      transform: rotate(0);
+      right: 0;
+    }
+  }
+}
+
+.details__descriptor {
+  font-family: "Work Sans";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  // font-style: italic;
+
+  opacity: 0;
+  @include fadeIn(0.5s, 0.5s);
+
+  &--hidden {
+    display: none;
+  }
+
+  // @media (min-width: $mobile) {
+  //   font-size: 18px;
+  // }
+}
+
+.developer__panel,
+.scientist__panel,
+.design__panel,
+.write__panel {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: $brand-red-fade;
+  transition: all 0.5s ease;
+}
+
+.developer__panel {
+  top: 0;
+  left: 0;
+  transform: translateX(-200%);
+
+  &--visible {
+    transform: translate(0, 0);
+  }
+}
+
+.design__panel {
+  top: 0;
+  left: 0;
+  transform: translateX(200%);
+  
+  &--visible {
+    transform: translate(0, 0);
+  }
+}
+
+.scientist__panel {
+  top: 0;
+  left: 0;
+  transform: translateY(-200%);
+  
+  &--visible {
+    transform: translate(0, 0);
+  }
+}
+
+.write__panel {
+  top: 0;
+  left: 0;
+  transform: translateY(200%);
+
+  &--visible {
+    transform: translate(0, 0);
+  }
+}

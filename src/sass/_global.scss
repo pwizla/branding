@@ -1,0 +1,31 @@
+
+body {
+  margin: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: $brand-black;
+  font-family: "Arvo", sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  color: #333;
+  font-size: 20px;
+
+  @media(min-width: $mobile) {
+    font-size: 32px;
+  }
+}
+
+p {
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
