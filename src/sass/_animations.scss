@@ -7,6 +7,12 @@
   }
 }
 
+@mixin transition($details) {
+  -moz-transition: $details;
+  -webkit-transition: $details;
+  transition: $details;
+}
+
 @keyframes upNoBG {
     0% {
       background: #fff;

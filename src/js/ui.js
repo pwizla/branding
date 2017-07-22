@@ -11,7 +11,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var desAnchor = document.getElementById('desAnchor');
   var wriAnchor = document.getElementById('wriAnchor');
   var descChoose = document.getElementById('choose');
+  var sciPanel = document.getElementById('sciPanel');
   var devPanel = document.getElementById('devPanel');
+  var desPanel = document.getElementById('desPanel');
+  var wriPanel = document.getElementById('wriPanel');
 
   knowMore.onclick = function() {
     titleName.className = "hidden";

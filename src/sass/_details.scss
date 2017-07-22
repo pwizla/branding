@@ -22,7 +22,7 @@
     &:hover {
       color: $brand-red;
       font-size: 24px;
-      transition: 0.3s ease;
+      @include transition(0.3s ease);
     }
 
     &:hover::before {
@@ -107,48 +107,51 @@
 .design__panel,
 .write__panel {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: $brand-red-fade;
-  transition: all 0.5s ease;
+  background: $brand-redshade-fade;
+  @include transition(all 0.5s ease);
 }
 
 .developer__panel {
-  top: 0;
-  left: 0;
-  transform: translateX(-200%);
+  height: 100vh;
+  width: 0;
 
   &--visible {
-    transform: translate(0, 0);
+    width: 100vw;
+    left: -20px;
+    top: -20px;
   }
 }
 
 .design__panel {
-  top: 0;
-  left: 0;
-  transform: translateX(200%);
+  height: 100vh;
+  width: 100vw;
+  left: 100vw;
   
   &--visible {
-    transform: translate(0, 0);
+    left: -20px;
+    top: -20px;
   }
 }
 
 .scientist__panel {
   top: 0;
   left: 0;
-  transform: translateY(-200%);
+  height: 0;
+  width: 100vw;
   
   &--visible {
-    transform: translate(0, 0);
+    height: 100vh;
   }
 }
 
 .write__panel {
-  top: 0;
   left: 0;
-  transform: translateY(200%);
+  top: 100vh;
+  height: 0;
+  width: 100vw;
 
   &--visible {
-    transform: translate(0, 0);
+    top: 0;
+    height: 100vh;
   }
 }

@@ -280,6 +280,8 @@ h1 {
   .details__anchor-scientist:hover, .details__anchor-dev:hover, .details__anchor-design:hover, .details__anchor-write:hover {
     color: #ff5555;
     font-size: 24px;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
     transition: 0.3s ease; }
 
 .details__anchor-scientist, .details__anchor-write {
@@ -336,38 +338,43 @@ h1 {
 .design__panel,
 .write__panel {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: #ffe6e6;
+  background: #ffd3cc;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 .developer__panel {
-  top: 0;
-  left: 0;
-  transform: translateX(-200%); }
+  height: 100vh;
+  width: 0; }
   .developer__panel--visible {
-    transform: translate(0, 0); }
+    width: 100vw;
+    left: -20px;
+    top: -20px; }
 
 .design__panel {
-  top: 0;
-  left: 0;
-  transform: translateX(200%); }
+  height: 100vh;
+  width: 100vw;
+  left: 100vw; }
   .design__panel--visible {
-    transform: translate(0, 0); }
+    left: -20px;
+    top: -20px; }
 
 .scientist__panel {
   top: 0;
   left: 0;
-  transform: translateY(-200%); }
+  height: 0;
+  width: 100vw; }
   .scientist__panel--visible {
-    transform: translate(0, 0); }
+    height: 100vh; }
 
 .write__panel {
-  top: 0;
   left: 0;
-  transform: translateY(200%); }
+  top: 100vh;
+  height: 0;
+  width: 100vw; }
   .write__panel--visible {
-    transform: translate(0, 0); }
+    top: 0;
+    height: 100vh; }
 
 .header__PW,
 .header__PW--expanded {
