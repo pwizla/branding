@@ -7,24 +7,84 @@
   </head>
   <body>
     <div class="container">
-      <div class="title-wrapper">
+      <div class="title__wrapper" id="titleBlock">
         <div class="title">
           <h1>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello!
-            <br />
-            My name is &nbsp;<span class="title--highlight">Pierre Wizla</span></s>
-            <br />&nbsp;&nbsp;&nbsp;and I am a&nbsp;
-            <div class="title__rotating-words">
-              <span>scientist</span>
-              <span>developer</span>
-              <span>designer</span>
-              <span>writer</span>
+            <div class="title__hello" id="hello">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello!
+            </div>
+            <div class="title__name">
+              My name is&nbsp;
+              <span class="title--highlight" id="myName">
+                Pierre Wizla
+              </span>
+            </div>
+            <div class="title__jobs" id="jobs">
+              &nbsp;&nbsp;&nbsp;and I am a&nbsp;
+              <div class="title__rotating-words">
+                <span>writer</span>
+                <span>scientist</span>
+                <span>developer</span>
+                <span>designer</span>
+              </div>
             </div>
           </h1>
+        </div>
+        <div class="title__know-more" id="knowMore">
+          Want to know more? … Click me!
+        </div>
+      </div>
+      <div class="details__wrapper">
+        <div
+          class="details__scientist-margin hidden"
+          id="scientistMargin"
+        >
+        </div>
+        <div
+          class="details__scientist-content hidden"
+          id="scientistContent"
+        >
+        </div>
+      </div>
+      <div class="details__wrapper">
+        <div
+          class="details__dev-margin hidden"
+          id="devMargin"
+        >
+        </div>
+        <div
+          class="details__dev-content hidden"
+          id="devContent"
+        >
+        </div>
+      </div>
+      <div class="details__wrapper">
+        <div
+          class="details__design-margin hidden"
+          id="designMargin"
+        >
+        </div>
+        <div
+          class="details__design-content hidden"
+          id="designContent"
+        >
+        </div>
+      </div>
+      <div class="details__wrapper">
+        <div
+          class="details__write-margin hidden"
+          id="writeMargin"
+        >
+        </div>
+        <div
+          class="details__write-content hidden"
+          id="writeContent"
+        >
         </div>
       </div>
     </div>
 
     <script id="__bs_script__">//<![CDATA[ document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname)); //]]></script>
+    <script src="./js/ui.js" type="text/javascript"></script>
   </body>
 </html>
