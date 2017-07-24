@@ -156,6 +156,84 @@
   100% {
     opacity: 0; } }
 
+@keyframes highlightSci {
+  0% {
+    color: #ff5555; }
+  25%, 100% {
+    color: #333; } }
+
+@keyframes highlightDev {
+  0% {
+    color: #333; }
+  25% {
+    color: #ff5555; }
+  50%, 100% {
+    color: #333; } }
+
+@keyframes highlightDes {
+  0% {
+    color: #333; }
+  50% {
+    color: #ff5555; }
+  75%, 100% {
+    color: #333; } }
+
+@keyframes highlightWri {
+  0%, 74% {
+    color: #333; }
+  75% {
+    color: #ff5555; }
+  100% {
+    color: #ff5555; } }
+
+@keyframes highlightRed {
+  0%, 18% {
+    color: #ff5555; }
+  19%, 100% {
+    color: #333; } }
+
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 24/07/2017 18:00
+    */
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"), url("./Flaticon.woff") format("woff"), url("./Flaticon.ttf") format("truetype"), url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg"); } }
+
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.flaticon-coding:before {
+  content: "\f100"; }
+
+.flaticon-pen:before {
+  content: "\f101"; }
+
+.flaticon-paint-palette:before {
+  content: "\f102"; }
+
+.flaticon-microscope:before {
+  content: "\f103"; }
+
 .title {
   position: absolute;
   left: 0;
@@ -177,9 +255,9 @@
     .title {
       left: 10%;
       margin-top: 3%; } }
-  @media (min-height: 650px) {
+  @media (min-height: 650px) and (min-width: 1075px) {
     .title {
-      top: 15%; } }
+      top: 5%; } }
   @media (max-width: 610px) {
     .title {
       transform: scale(0.66);
@@ -188,7 +266,7 @@
     .title {
       transform: scale(0.66);
       left: -60px;
-      top: -40px; } }
+      top: -80px; } }
   .title__hello {
     position: relative;
     left: 20px;
@@ -239,13 +317,13 @@
     line-height: 80px;
     opacity: 0;
     overflow: hidden;
-    animation: rotateWords 12s linear infinite 0s; }
+    animation: rotateWords 16s linear infinite 0s; }
   .title__rotating-words span:nth-child(2) {
-    animation-delay: 3s; }
+    animation-delay: 4s; }
   .title__rotating-words span:nth-child(3) {
-    animation-delay: 6s; }
+    animation-delay: 8s; }
   .title__rotating-words span:nth-child(4) {
-    animation-delay: 9s; }
+    animation-delay: 12s; }
   .title__tagline {
     position: relative;
     display: block;
@@ -268,6 +346,27 @@
       font-weight: 400;
       font-size: 42px;
       margin-right: 30px; }
+  .title__icon_wrapper {
+    position: relative;
+    top: 80px;
+    clear: both; }
+  .title__icon_wrapper span {
+    display: block;
+    float: left;
+    padding-right: 20px;
+    padding: 10px 25px 10px 0px;
+    width: 80px;
+    height: 70px;
+    margin-right: 20px;
+    animation: highlightRed 16s ease infinite 0s; }
+  .title__icon_wrapper span:nth-child(1) {
+    animation-delay: 0s; }
+  .title__icon_wrapper span:nth-child(2) {
+    animation-delay: 4s; }
+  .title__icon_wrapper span:nth-child(3) {
+    animation-delay: 8s; }
+  .title__icon_wrapper span:nth-child(4) {
+    animation-delay: 12s; }
   @media (min-height: 650px) {
     .title__jobs, .title__rotating-words, .title__tagline {
       margin-top: 50px; }
@@ -277,6 +376,14 @@
 @media (min-height: 650px) and (min-width: 1075px) {
   .title__tagline--part-two {
     margin-top: 50px; } }
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-size: 64px;
+  transition: all 0.5s ease; }
+
+.flaticon:hover {
+  border-bottom: solid 10px #ff5555;
+  padding-bottom: 10px; }
 
 body {
   margin: 0;

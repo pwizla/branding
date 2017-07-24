@@ -210,3 +210,57 @@
       opacity: 0;
     }
   }
+
+@keyframes highlightSci {
+    0% {
+      color: $brand-red;
+    }
+    25%, 100% {
+      color: $brand-black;
+    }
+  }
+
+@keyframes highlightDev {
+    0% {
+      color: $brand-black;
+    }
+    25% {
+      color: $brand-red;
+    }
+    50%, 100% {
+      color: $brand-black
+    }
+  }
+
+@keyframes highlightDes {
+    0% {
+      color: $brand-black;
+    }
+    50% {
+      color: $brand-red;
+    }
+    75%, 100% {
+      color: $brand-black
+    }
+  }
+
+@keyframes highlightWri {
+    0%, 74% {
+      color: $brand-black;
+    }
+    75% {
+      color: $brand-red;
+    }
+    100% {
+      color: $brand-red;
+    }
+  }
+
+@keyframes highlightRed {
+    0%, 18% {
+      color: $brand-red;
+    }
+    19%, 100% {
+      color: $brand-black;
+    }
+  }

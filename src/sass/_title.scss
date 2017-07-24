@@ -20,8 +20,8 @@
     margin-top: 3%;
   }
 
-  @media (min-height: $content-height) {
-    top: 15%;
+  @media (min-height: $content-height) and (min-width: $content-full-width) {
+    top: 5%;
   }
 
   @media (max-width: $content-width) {
@@ -32,7 +32,7 @@
   @media (max-height: $content-height) {
     transform: scale(0.66);
     left: -60px;
-    top: -40px;
+    top: -80px;
   }
 
     &__hello {
@@ -98,19 +98,19 @@
     line-height: 80px;
     opacity: 0;
     overflow: hidden;
-    animation: rotateWords 12s linear infinite 0s;
+    animation: rotateWords 16s linear infinite 0s;
   }
 
   &__rotating-words span:nth-child(2) {
-    animation-delay: 3s;
+    animation-delay: 4s;
   }
 
   &__rotating-words span:nth-child(3) {
-    animation-delay: 6s;
+    animation-delay: 8s;
   }
 
   &__rotating-words span:nth-child(4) {
-    animation-delay: 9s;
+    animation-delay: 12s;
   }
 
   &__tagline {
@@ -142,6 +142,40 @@
     }
   }
 
+  &__icon_wrapper {
+    position: relative;
+    top: 80px;
+    clear: both;
+  }
+
+  &__icon_wrapper span {
+    display: block;
+    float: left;
+    // border-radius: 80%;
+    padding-right: 20px;
+    padding: 10px 25px 10px 0px;
+    width: 80px;
+    height: 70px;
+    margin-right: 20px;
+    animation: highlightRed 16s ease infinite 0s;
+  }
+
+  &__icon_wrapper span:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  &__icon_wrapper span:nth-child(2) {
+    animation-delay: 4s;
+  }
+
+  &__icon_wrapper span:nth-child(3) {
+    animation-delay: 8s;
+  }
+
+  &__icon_wrapper span:nth-child(4) {
+    animation-delay: 12s;
+  }
+
   @media (min-height: $content-height) {
     &__jobs,
     &__rotating-words,
@@ -161,3 +195,14 @@
   }
 }
 
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-size: 64px;
+  // padding-right: 38px;
+  transition: all 0.5s ease;
+}
+
+.flaticon:hover {
+  border-bottom: solid 10px $brand-red;
+  padding-bottom: 10px;
+  // border-radius: 50%;
+}
