@@ -1,3 +1,5 @@
+// MIXINS
+
 @mixin fadeIn($duration, $delay) {
   animation: fadeIn $duration ease forwards $delay;
   @keyframes fadeIn {
@@ -11,6 +13,26 @@
   -moz-transition: $details;
   -webkit-transition: $details;
   transition: $details;
+}
+
+// KEYFRAMES
+
+@keyframes appearBG {
+  0% {
+    background: #fff;
+  }
+  20% {
+    background: $brand-black;
+  }
+  30% {
+    background: $brand-red;
+  }
+  40% {
+    background: #fff;
+  }
+  100% {
+    background: #fff;
+  }
 }
 
 @keyframes upNoBG {
