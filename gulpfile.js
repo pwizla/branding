@@ -18,7 +18,7 @@ gulp.task('clean:build', function() {
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            baseDir: 'src'
+            baseDir: '.'
         },
         browser: "google chrome",
     })
@@ -63,7 +63,7 @@ gulp.task('build', function () {
 
 gulp.task('watch', ['browserSync', 'sass'], function(){
     gulp.watch('src/sass/**/*.scss', ['sass']);
-    gulp.watch('src/**/*.html', browserSync.reload);
+    gulp.watch('**/*.html', browserSync.reload);
     gulp.watch('src/js/**/*.js', browserSync.reload);
 })
 
