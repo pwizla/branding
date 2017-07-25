@@ -1,7 +1,12 @@
 // MIXINS
 
+@mixin animation($details) {
+  animation: $details;
+  -webkit-animation: $details;
+}
+
 @mixin fadeIn($duration, $delay) {
-  animation: fadeIn $duration ease forwards $delay;
+  @include animation(fadeIn $duration ease forwards $delay);
   @keyframes fadeIn {
     to {
       opacity: 1;

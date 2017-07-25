@@ -8,9 +8,7 @@
   font-weight: 700;
   color: $brand-black;
 
-  -moz-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  @include transition(all 1s ease);
 
   opacity: 0;
   @include fadeIn (1s, 0.7s);
@@ -98,7 +96,7 @@
     line-height: 80px;
     opacity: 0;
     overflow: hidden;
-    animation: rotateWords 16s linear infinite 0s;
+    @include animation(rotateWords 16s linear infinite 0s);
   }
 
   &__rotating-words span:nth-child(2) {
@@ -157,7 +155,7 @@
     width: 80px;
     height: 70px;
     margin-right: 20px;
-    animation: highlightRed 16s ease infinite 0s;
+    @include animation(highlightRed 16s ease infinite 0s);
   }
 
   &__icon_wrapper span:nth-child(1) {
