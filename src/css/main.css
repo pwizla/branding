@@ -237,7 +237,7 @@
 .title {
   position: absolute;
   left: 0;
-  top: 0;
+  margin-top: 10%;
   min-width: 400px;
   font-family: "Source Sans Pro";
   font-weight: 700;
