@@ -252,14 +252,14 @@
 @keyframes fadeIn {
   to {
     opacity: 1; } }
-  @media (min-width: 610px) {
+  @media (min-width: 580px) {
     .title {
       left: 10%;
-      margin-top: 3%; } }
+      margin-top: 5%; } }
   @media (min-height: 650px) and (min-width: 1075px) {
     .title {
       top: 5%; } }
-  @media (max-width: 610px) {
+  @media (max-width: 580px) {
     .title {
       transform: scale(0.66);
       left: -60px; } }
