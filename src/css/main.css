@@ -237,7 +237,7 @@
 .title {
   position: absolute;
   left: 0;
-  margin-top: 10%;
+  margin-top: -10%;
   min-width: 400px;
   font-family: "Source Sans Pro";
   font-weight: 700;
@@ -255,19 +255,24 @@
   @media (min-width: 580px) {
     .title {
       left: 10%;
-      margin-top: 5%; } }
-  @media (min-height: 650px) and (min-width: 1075px) {
+      margin-top: 5% !important; } }
+  @media (min-height: 640px) {
+    .title {
+      margin-top: 10%; } }
+  @media (min-height: 640px) and (min-width: 1075px) {
     .title {
       top: 5%; } }
+  @media (min-height: 640px) and (min-width: 580px) {
+    .title {
+      margin-top: 10% !important; } }
   @media (max-width: 580px) {
     .title {
-      transform: scale(0.66);
+      transform: scale(0.86);
       left: -60px; } }
-  @media (max-height: 650px) {
+  @media (max-height: 640px) {
     .title {
-      transform: scale(0.66);
-      left: -60px;
-      top: -80px; } }
+      transform: scale(0.86);
+      left: -60px; } }
   .title__hello {
     position: relative;
     left: 20px;
@@ -370,13 +375,13 @@
     animation-delay: 8s; }
   .title__icon_wrapper span:nth-child(4) {
     animation-delay: 12s; }
-  @media (min-height: 650px) {
+  @media (min-height: 640px) {
     .title__jobs, .title__rotating-words, .title__tagline {
       margin-top: 50px; }
     .title__tagline--part-two {
       margin-top: 0; } }
 
-@media (min-height: 650px) and (min-width: 1075px) {
+@media (min-height: 640px) and (min-width: 1075px) {
   .title__tagline--part-two {
     margin-top: 50px; } }
 

@@ -1,7 +1,7 @@
 .title {
   position: absolute;
   left: 0;
-  margin-top: 10%;
+  margin-top: -10%;
   min-width: 400px;
   
   font-family: "Source Sans Pro";
@@ -15,22 +15,29 @@
 
   @media (min-width: $content-width) {
     left: 10%;
-    margin-top: 5%;
+    margin-top: 5% !important;
+  }
+
+  @media (min-height: $content-height) {
+    margin-top: 10%;
   }
 
   @media (min-height: $content-height) and (min-width: $content-full-width) {
     top: 5%;
   }
 
+  @media (min-height: $content-height) and (min-width: $content-width) {
+    margin-top: 10% !important;
+  }
+
   @media (max-width: $content-width) {
-    transform: scale(0.66);
+    transform: scale(0.86);
     left: -60px;
   }
 
   @media (max-height: $content-height) {
-    transform: scale(0.66);
+    transform: scale(0.86);
     left: -60px;
-    top: -80px;
   }
 
     &__hello {
